@@ -1,0 +1,65 @@
+==8889== Memcheck, a memory error detector
+==8889== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8889== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8889== Command: ./node 5000 11 1:2 13:7 19:2
+==8889== 
+[13:51:05.073739565][[35mDEBUG[0m] client.c:70 in create_client_udp_socket() - Binding UDP Socket to port 5011
+[13:51:05.081973481][[35mDEBUG[0m] client.c:357 in main() - Setting up connection to server...
+[13:51:05.086812194][[35mDEBUG[0m] client.c:42 in create_client_tcp_socket() - Connecting to server at 127.0.0.1, port 5000
+[13:51:05.088367156][[35mDEBUG[0m] client.c:368 in main() - Sending edge data to server...
+[13:51:05.092702232][[1;35mRESPONSE[0m] client.c:203 in send_edges() - OK
+[13:51:05.094925928][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 1 : 2
+[13:51:05.096690211][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:05.097105845][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 13 : 7
+[13:51:05.097268830][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:05.097371555][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 19 : 2
+[13:51:05.097533544][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:05.098435273][[35mDEBUG[0m] client.c:370 in main() - Finished sending edge data to server!
+[13:51:05.099030958][[35mDEBUG[0m] client.c:373 in main() - Waiting for Routing Table from Server...
+[13:51:05.296906532][[35mDEBUG[0m] client.c:92 in recv_routing_table() - Recieved num_pairs: 6
+[13:51:05.299143649][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 103:19
+[13:51:05.299792633][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 19:19
+[13:51:05.300012780][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 107:19
+[13:51:05.300202095][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 17:19
+[13:51:05.300468370][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 13:13
+[13:51:05.300659003][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 101:19
+[13:51:05.301620508][[35mDEBUG[0m] client.c:376 in main() - Finished recieving routing table!
+[13:51:06.297144541][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 46 Dest 13 Src 1 Msg A Very Short Story by Ernest Hemingway 
+[13:51:06.304719464][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 46 Packet to: 13
+[13:51:06.305351363][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 372 Dest 17 Src 1 Msg One hot evening in Padua they carried him up onto the roof and he could look out over the top of the town. There were chimney swifts in the sky. After a while it got dark and the searchlights came out. The others went down and took the bottles with them. He and Luz could hear them below on the balcony. Luz sat on the bed. She was cool and fresh in the hot night. 
+[13:51:06.305522106][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 372 Packet to: 19
+[13:51:06.305670827][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 560 Dest 101 Src 1 Msg Luz stayed on night duty for three months. They were glad to let her. When they operated on him she prepared him for the operating table; and they had a joke about friend or enema. He went under the anaesthetic holding tight on to himself so he would not blab about anything during the silly, talky time. After he got on crutches he used to take the temperatures so Luz would not have to get up from the bed. There were only a few patients, and they all knew about it. They all liked Luz. As he walked back along the halls he thought of Luz in his bed. 
+[13:51:06.305901463][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 560 Packet to: 19
+[13:51:06.306252066][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 377 Dest 107 Src 1 Msg Before he went back to the front they went into the Duomo and prayed. It was dim and quiet, and there were other people praying. They wanted to get married, but there was not enough time for the banns, and neither of them had birth certificates. They felt as though they were married, but they wanted everyone to know about it, and to make it so they could not lose it. 
+[13:51:06.306459671][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 377 Packet to: 19
+[13:51:06.307065704][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 342 Dest 101 Src 1 Msg Luz wrote him many letters that he never got until after the armistice. Lifteen came in a bunch to the front and he sorted them by the dates and read them all straight through. They were all about the hospital, and how much she loved him and how it was impossible to get along without him and how terrible it was missing him at night. 
+[13:51:06.307270337][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 342 Packet to: 19
+[13:51:06.307424616][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 584 Dest 11 Src 1 Msg After the armistice they agreed he should go home to get a job so they might be married. Luz would not come home until he had a good job and could come to New York to meet her. It was understood he would not drink, and he did not want to see his friends or anyone in the States.  Only to get a job and be married. On the train from Padua to Milan they quarreled about her not being willing to come home at once. When they had to say good-bye, in the station at Milan, they kissed good-bye, but were not finished with the quarrel. He felt sick about saying good- bye like that. 
+[13:51:06.308041347][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:06.309219662][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 781 Dest 17 Src 1 Msg He went to America on a boat from Genoa. Luz went back to Pordonone to open a hospital. It was lonely and rainy there, and there was a battalion of arditi quartered in the town. Living in the muddy, rainy town in the winter, the major of the battalion made love to Luz, and she had never known Italians before, and finally wrote to the States that theirs had only been a boy and girl affair. She was sorry, and she knew he would probably not be able to understand, but might some day forgive her, and be grateful to her, and she expected, absolutely unexpectedly, to be married in the spring. She loved him as always, but she realized now it was only a boy and girl love. She hoped he would have a great career, and believed in him absolutely. She knew it was for the best. 
+[13:51:06.309448962][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 781 Packet to: 19
+[13:51:06.309600417][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 264 Dest 13 Src 1 Msg The major did not marry her in the spring, or any other time. Luz never got an answer to the letter to Chicago about it. A short time after he contracted gonorrhea from a sales girl in a loop department store while riding in a taxicab through Lincoln Park. 
+[13:51:06.309796616][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 264 Packet to: 13
+[13:51:06.309932940][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 17 Src 1 Msg QUIT
+[13:51:06.310112202][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 19
+[13:51:06.310244088][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 13 Src 1 Msg QUIT
+[13:51:06.310425419][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 13
+[13:51:06.310556480][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 107 Src 1 Msg QUIT
+[13:51:06.310734691][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 19
+[13:51:06.310865303][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 101 Src 1 Msg QUIT
+[13:51:06.311040949][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 19
+[13:51:06.311171898][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 103 Src 1 Msg QUIT
+[13:51:06.311350763][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 19
+[13:51:06.311483302][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 19 Src 1 Msg QUIT
+[13:51:06.311696220][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 19
+[13:51:06.311827429][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 11 Src 1 Msg QUIT
+[13:51:06.311919493][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+==8889== 
+==8889== HEAP SUMMARY:
+==8889==     in use at exit: 0 bytes in 0 blocks
+==8889==   total heap usage: 156 allocs, 156 frees, 84,436 bytes allocated
+==8889== 
+==8889== All heap blocks were freed -- no leaks are possible
+==8889== 
+==8889== For counts of detected and suppressed errors, rerun with: -v
+==8889== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

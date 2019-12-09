@@ -1,0 +1,52 @@
+==8908== Memcheck, a memory error detector
+==8908== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8908== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8908== Command: ./node 5000 4 1:2 16:5
+==8908== 
+[13:51:08.841836266][[35mDEBUG[0m] client.c:70 in create_client_udp_socket() - Binding UDP Socket to port 5004
+[13:51:08.850002406][[35mDEBUG[0m] client.c:357 in main() - Setting up connection to server...
+[13:51:08.854837652][[35mDEBUG[0m] client.c:42 in create_client_tcp_socket() - Connecting to server at 127.0.0.1, port 5000
+[13:51:08.856182241][[35mDEBUG[0m] client.c:368 in main() - Sending edge data to server...
+[13:51:08.860047942][[1;35mRESPONSE[0m] client.c:203 in send_edges() - OK
+[13:51:08.861559380][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 1 : 2
+[13:51:08.862724157][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.863014430][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 16 : 5
+[13:51:08.863205836][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.863854628][[35mDEBUG[0m] client.c:370 in main() - Finished sending edge data to server!
+[13:51:08.864260224][[35mDEBUG[0m] client.c:373 in main() - Waiting for Routing Table from Server...
+[13:51:08.950053869][[35mDEBUG[0m] client.c:92 in recv_routing_table() - Recieved num_pairs: 3
+[13:51:08.955715860][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 256:16
+[13:51:08.956747717][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 16:16
+[13:51:08.957437203][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 64:16
+[13:51:08.960262488][[35mDEBUG[0m] client.c:376 in main() - Finished recieving routing table!
+[13:51:09.974676554][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 38 Dest 64 Src 1 Msg Thorough flood, thorough fire! 
+[13:51:09.984859618][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 38 Packet to: 16
+[13:51:09.997096794][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 39 Dest 4 Src 1 Msg Swifter than the moon's sphere; 
+[13:51:09.997702264][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:09.998930638][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 39 Dest 16 Src 1 Msg To dew her orbs upon the green; 
+[13:51:09.002854964][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 39 Packet to: 16
+[13:51:09.003008180][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 44 Dest 16 Src 1 Msg The cowslips tall her pensioners be; 
+[13:51:09.003342650][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 44 Packet to: 16
+[13:51:09.003485774][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 42 Dest 64 Src 1 Msg In their gold coats spots you see; 
+[13:51:09.003754590][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 42 Packet to: 16
+[13:51:09.003893004][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 45 Dest 256 Src 1 Msg In those freckles live their savours; 
+[13:51:09.004161759][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 45 Packet to: 16
+[13:51:09.004302311][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 47 Dest 4 Src 1 Msg And hang a pearl in every cowslip's ear.
+[13:51:10.004427794][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:10.004735845][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 64 Src 1 Msg QUIT
+[13:51:10.005006834][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 16
+[13:51:10.005142814][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 256 Src 1 Msg QUIT
+[13:51:10.005324539][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 16
+[13:51:10.005455292][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 16 Src 1 Msg QUIT
+[13:51:10.005634059][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 16
+[13:51:10.005764423][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 4 Src 1 Msg QUIT
+[13:51:10.005859918][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+==8908== 
+==8908== HEAP SUMMARY:
+==8908==     in use at exit: 0 bytes in 0 blocks
+==8908==   total heap usage: 113 allocs, 113 frees, 62,485 bytes allocated
+==8908== 
+==8908== All heap blocks were freed -- no leaks are possible
+==8908== 
+==8908== For counts of detected and suppressed errors, rerun with: -v
+==8908== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

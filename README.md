@@ -1,2 +1,1 @@
-# IN2140
-  Course work in IN2140 at the University of Oslo 
+# IN2140 - Introduction to Operating Systems and Networking

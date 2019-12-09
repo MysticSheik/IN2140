@@ -1,0 +1,33 @@
+==8912== Memcheck, a memory error detector
+==8912== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8912== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8912== Command: ./node 5000 64 16:5 256:5
+==8912== 
+[13:51:08.731838395][[35mDEBUG[0m] client.c:70 in create_client_udp_socket() - Binding UDP Socket to port 5064
+[13:51:08.739961660][[35mDEBUG[0m] client.c:357 in main() - Setting up connection to server...
+[13:51:08.744831631][[35mDEBUG[0m] client.c:42 in create_client_tcp_socket() - Connecting to server at 127.0.0.1, port 5000
+[13:51:08.746410121][[35mDEBUG[0m] client.c:368 in main() - Sending edge data to server...
+[13:51:08.750537533][[1;35mRESPONSE[0m] client.c:203 in send_edges() - OK
+[13:51:08.752872987][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 16 : 5
+[13:51:08.754569564][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.754941424][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 256 : 5
+[13:51:08.755105785][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.755992691][[35mDEBUG[0m] client.c:370 in main() - Finished sending edge data to server!
+[13:51:08.756592895][[35mDEBUG[0m] client.c:373 in main() - Waiting for Routing Table from Server...
+[13:51:08.929535486][[35mDEBUG[0m] client.c:92 in recv_routing_table() - Recieved num_pairs: 0
+[13:51:08.934989405][[35mDEBUG[0m] client.c:376 in main() - Finished recieving routing table!
+[13:51:10.005941509][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 38 Dest 64 Src 1 Msg Thorough flood, thorough fire! 
+[13:51:10.006875855][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:10.018822680][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 42 Dest 64 Src 1 Msg In their gold coats spots you see; 
+[13:51:10.018920911][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:10.032009623][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 64 Src 1 Msg QUIT
+[13:51:10.032107912][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+==8912== 
+==8912== HEAP SUMMARY:
+==8912==     in use at exit: 0 bytes in 0 blocks
+==8912==   total heap usage: 50 allocs, 50 frees, 24,635 bytes allocated
+==8912== 
+==8912== All heap blocks were freed -- no leaks are possible
+==8912== 
+==8912== For counts of detected and suppressed errors, rerun with: -v
+==8912== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

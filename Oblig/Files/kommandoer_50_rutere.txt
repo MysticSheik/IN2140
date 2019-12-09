@@ -1,0 +1,8 @@
+print 13
+sett_modell 13 Zyxel b2 POWER
+print 13
+sett_flag 13 0 1
+print 13
+finnes_rute 13 35
+legg_til_kobling 3 35
+finnes_rute 13 35

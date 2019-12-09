@@ -1,0 +1,83 @@
+==8906== Memcheck, a memory error detector
+==8906== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8906== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8906== Command: ./node 5000 1 2:4 4:2 16:8
+==8906== 
+[13:51:08.789663137][[35mDEBUG[0m] client.c:70 in create_client_udp_socket() - Binding UDP Socket to port 5001
+[13:51:08.797818714][[35mDEBUG[0m] client.c:357 in main() - Setting up connection to server...
+[13:51:08.802621768][[35mDEBUG[0m] client.c:42 in create_client_tcp_socket() - Connecting to server at 127.0.0.1, port 5000
+[13:51:08.804160923][[35mDEBUG[0m] client.c:368 in main() - Sending edge data to server...
+[13:51:08.808265873][[1;35mRESPONSE[0m] client.c:203 in send_edges() - OK
+[13:51:08.810427071][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 2 : 4
+[13:51:08.812160650][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.812386980][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 4 : 2
+[13:51:08.812550587][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.812860274][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 16 : 8
+[13:51:08.813018396][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.813919773][[35mDEBUG[0m] client.c:370 in main() - Finished sending edge data to server!
+[13:51:08.814519084][[35mDEBUG[0m] client.c:373 in main() - Waiting for Routing Table from Server...
+[13:51:08.935201218][[35mDEBUG[0m] client.c:92 in recv_routing_table() - Recieved num_pairs: 8
+[13:51:08.941720087][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 128:2
+[13:51:08.942983910][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 32:2
+[13:51:08.943606899][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 256:4
+[13:51:08.944204803][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 16:4
+[13:51:08.944867475][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 64:4
+[13:51:08.945473184][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 4:4
+[13:51:08.946007418][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 8:2
+[13:51:08.946539299][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 2:2
+[13:51:08.949869815][[35mDEBUG[0m] client.c:376 in main() - Finished recieving routing table!
+[13:51:09.961855812][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 29 Dest: 32 Source: 1 Message: Over hill, over dale, 
+[13:51:09.969009420][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 29 Packet to: 2
+[13:51:09.970026514][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 38 Dest: 2 Source: 1 Message: Thorough bush, thorough brier, 
+[13:51:09.970238731][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 38 Packet to: 2
+[13:51:09.970440565][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 29 Dest: 8 Source: 1 Message: Over park, over pale, 
+[13:51:09.970670818][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 29 Packet to: 2
+[13:51:09.970764735][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 38 Dest: 64 Source: 1 Message: Thorough flood, thorough fire! 
+[13:51:09.970948420][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 38 Packet to: 4
+[13:51:09.971087325][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 31 Dest: 32 Source: 1 Message: I do wander everywhere, 
+[13:51:09.971283053][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 31 Packet to: 2
+[13:51:09.971371784][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 39 Dest: 4 Source: 1 Message: Swifter than the moon's sphere; 
+[13:51:09.971559382][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 39 Packet to: 4
+[13:51:09.971644951][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 36 Dest: 2 Source: 1 Message: And I serve the Fairy Queen, 
+[13:51:09.971824239][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 36 Packet to: 2
+[13:51:09.971910463][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 39 Dest: 16 Source: 1 Message: To dew her orbs upon the green; 
+[13:51:09.972088845][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 39 Packet to: 4
+[13:51:09.972551334][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 44 Dest: 16 Source: 1 Message: The cowslips tall her pensioners be; 
+[13:51:09.972744130][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 44 Packet to: 4
+[13:51:09.972835114][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 42 Dest: 64 Source: 1 Message: In their gold coats spots you see; 
+[13:51:09.973036436][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 42 Packet to: 4
+[13:51:09.973124498][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 39 Dest: 8 Source: 1 Message: Those be rubies, fairy favours; 
+[13:51:09.973313779][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 39 Packet to: 2
+[13:51:09.973399933][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 45 Dest: 256 Source: 1 Message: In those freckles live their savours; 
+[13:51:09.973580267][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 45 Packet to: 4
+[13:51:09.973668955][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 42 Dest: 128 Source: 1 Message: I must go seek some dewdrops here, 
+[13:51:09.973847371][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 42 Packet to: 2
+[13:51:09.973934170][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 47 Dest: 4 Source: 1 Message: And hang a pearl in every cowslip's ear.
+[13:51:09.974117503][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 47 Packet to: 4
+[13:51:09.974201819][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 64 Source: 1 Message: QUIT
+[13:51:09.974378124][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 4
+[13:51:09.974461954][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 256 Source: 1 Message: QUIT
+[13:51:09.974638630][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 4
+[13:51:09.974722299][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 128 Source: 1 Message: QUIT
+[13:51:09.974911647][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 2
+[13:51:09.974996687][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 16 Source: 1 Message: QUIT
+[13:51:09.975173432][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 4
+[13:51:09.975256949][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 32 Source: 1 Message: QUIT
+[13:51:09.975432059][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 2
+[13:51:09.975514864][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 8 Source: 1 Message: QUIT
+[13:51:09.975689744][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 2
+[13:51:09.975772561][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 2 Source: 1 Message: QUIT
+[13:51:09.975950877][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 2
+[13:51:09.976035646][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 4 Source: 1 Message: QUIT
+[13:51:09.976208843][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 4
+[13:51:09.976292854][[35mDEBUG[0m] client.c:132 in create_packet() - Created Packet! Len: 11 Dest: 1 Source: 1 Message: QUIT
+[13:51:09.976802289][[35mDEBUG[0m] client.c:270 in run_sender_node() - Packet is already at destination - no forwarding required.
+==8906== 
+==8906== HEAP SUMMARY:
+==8906==     in use at exit: 0 bytes in 0 blocks
+==8906==   total heap usage: 262 allocs, 262 frees, 230,700 bytes allocated
+==8906== 
+==8906== All heap blocks were freed -- no leaks are possible
+==8906== 
+==8906== For counts of detected and suppressed errors, rerun with: -v
+==8906== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

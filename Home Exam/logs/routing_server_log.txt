@@ -1,0 +1,123 @@
+==8904== Memcheck, a memory error detector
+==8904== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8904== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8904== Command: ./routing_server 5000 9
+==8904== 
+[13:51:06.779153305][[35mDEBUG[0m] server.c:26 in create_socket() - Creating Socket
+[13:51:06.784988010][[35mDEBUG[0m] server.c:33 in create_socket() - Created Socket
+[13:51:06.786765338][[35mDEBUG[0m] server.c:46 in create_socket() - Binding Socket to Port: 5000
+[13:51:06.787397151][[35mDEBUG[0m] server.c:52 in create_socket() - Successfully Bound Socket!
+[13:51:06.787937690][[35mDEBUG[0m] server.c:258 in main() - Trying to listen to Socket...
+[13:51:06.788559019][[35mDEBUG[0m] server.c:264 in main() - Now listening on socket
+[13:51:08.693654237][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.700618790][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 128 with ID: 0
+[13:51:08.709642710][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 32 with ID: 1
+[13:51:08.712042334][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 256 with ID: 2
+[13:51:08.712540159][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.718231023][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 16 with ID: 3
+[13:51:08.722156930][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 64 with ID: 4
+[13:51:08.745324346][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.759011995][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.778676433][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 1 with ID: 5
+[13:51:08.779961365][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 4 with ID: 6
+[13:51:08.780348133][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 8 with ID: 7
+[13:51:08.782921808][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.785177833][[35mDEBUG[0m] server.c:75 in add_node() - Added Node: 2 with ID: 8
+[13:51:08.803054338][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.843024034][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.849835549][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.857632581][[35mDEBUG[0m] server.c:276 in main() - Accepted Connection! Recieving edge data...
+[13:51:08.864219523][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 0 - 1: OK
+[13:51:08.864397678][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 0 - 2: OK
+[13:51:08.864546239][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 1 - 0: OK
+[13:51:08.864603677][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 1 - 2: OK
+[13:51:08.864659087][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 1 - 3: OK
+[13:51:08.864714006][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 1 - 7: OK
+[13:51:08.864768819][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 2 - 0: OK
+[13:51:08.864822738][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 2 - 1: OK
+[13:51:08.864876793][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 2 - 3: OK
+[13:51:08.864930486][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 2 - 4: OK
+[13:51:08.864985467][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 3 - 1: OK
+[13:51:08.865039529][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 3 - 2: OK
+[13:51:08.865096902][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 3 - 4: OK
+[13:51:08.865151090][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 3 - 5: OK
+[13:51:08.865204447][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 3 - 6: OK
+[13:51:08.865258416][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 3 - 7: OK
+[13:51:08.865312283][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 4 - 2: OK
+[13:51:08.865366285][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 4 - 3: OK
+[13:51:08.865420178][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 5 - 3: OK
+[13:51:08.865474534][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 5 - 6: OK
+[13:51:08.865528475][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 5 - 8: OK
+[13:51:08.866933095][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 6 - 3: OK
+[13:51:08.866991681][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 6 - 5: OK
+[13:51:08.867047532][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 7 - 1: OK
+[13:51:08.867102794][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 7 - 3: OK
+[13:51:08.867157608][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 7 - 8: OK
+[13:51:08.867212017][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 8 - 5: OK
+[13:51:08.867266119][[35mDEBUG[0m] server.c:88 in test_edges() - Connection 8 - 7: OK
+[13:51:08.881390955][[35mDEBUG[0m] server.c:289 in main() - Sending Routing Tables...
+[13:51:08.881949355][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 128
+[13:51:08.885954156][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.886580439][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 32
+[13:51:08.887420803][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 128:128
+[13:51:08.903763596][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.910861355][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.912152578][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 256
+[13:51:08.916224806][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.916493444][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 16
+[13:51:08.916722495][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 256:256
+[13:51:08.916924852][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 64:64
+[13:51:08.920395365][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.926228654][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.927007907][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.927358373][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 64
+[13:51:08.931100709][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.931452179][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 1
+[13:51:08.931812399][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 128:2
+[13:51:08.932109794][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 32:2
+[13:51:08.932318064][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 256:4
+[13:51:08.932575733][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 16:4
+[13:51:08.932774260][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 64:4
+[13:51:08.932970576][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 4:4
+[13:51:08.933167364][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 8:2
+[13:51:08.933362422][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 2:2
+[13:51:08.936779332][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.942591522][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.943297299][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.943907097][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.944558741][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.945167688][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.945741330][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.946274684][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.946877007][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.947198983][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 4
+[13:51:08.947531169][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 256:16
+[13:51:08.947835831][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 16:16
+[13:51:08.948134666][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 64:16
+[13:51:08.951380793][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.956432133][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.957084473][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.957785679][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.957986318][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 8
+[13:51:08.958183708][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 128:32
+[13:51:08.961960855][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 32:32
+[13:51:08.965073479][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.970434942][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.971143152][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.971463091][[35mDEBUG[0m] server.c:291 in main() - Creating Routing Table for: 2
+[13:51:08.971788603][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 128:8
+[13:51:08.972093618][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 32:8
+[13:51:08.972431120][[35mDEBUG[0m] server.c:223 in create_routing_table() - Added pair: 8:8
+[13:51:08.975601280][[1;35mRESPONSE[0m] server.c:172 in send_routing_table() - OK
+[13:51:08.980707349][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.981414856][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+[13:51:08.982114220][[1;35mRESPONSE[0m] server.c:190 in send_routing_table() - OK
+==8904== 
+==8904== HEAP SUMMARY:
+==8904==     in use at exit: 0 bytes in 0 blocks
+==8904==   total heap usage: 521 allocs, 521 frees, 390,510 bytes allocated
+==8904== 
+==8904== All heap blocks were freed -- no leaks are possible
+==8904== 
+==8904== For counts of detected and suppressed errors, rerun with: -v
+==8904== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

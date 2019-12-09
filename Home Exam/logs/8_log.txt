@@ -1,0 +1,47 @@
+==8909== Memcheck, a memory error detector
+==8909== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8909== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8909== Command: ./node 5000 8 2:1 16:3 32:1
+==8909== 
+[13:51:08.833659890][[35mDEBUG[0m] client.c:70 in create_client_udp_socket() - Binding UDP Socket to port 5008
+[13:51:08.839292400][[35mDEBUG[0m] client.c:357 in main() - Setting up connection to server...
+[13:51:08.842669032][[35mDEBUG[0m] client.c:42 in create_client_tcp_socket() - Connecting to server at 127.0.0.1, port 5000
+[13:51:08.843696375][[35mDEBUG[0m] client.c:368 in main() - Sending edge data to server...
+[13:51:08.846519453][[1;35mRESPONSE[0m] client.c:203 in send_edges() - OK
+[13:51:08.848033737][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 2 : 1
+[13:51:08.849230738][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.849495061][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 16 : 3
+[13:51:08.849624759][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.849685687][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 32 : 1
+[13:51:08.849805709][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.850475578][[35mDEBUG[0m] client.c:370 in main() - Finished sending edge data to server!
+[13:51:08.850882224][[35mDEBUG[0m] client.c:373 in main() - Waiting for Routing Table from Server...
+[13:51:08.963680157][[35mDEBUG[0m] client.c:92 in recv_routing_table() - Recieved num_pairs: 2
+[13:51:08.969667582][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 128:32
+[13:51:08.970793090][[35mDEBUG[0m] client.c:107 in recv_routing_table() - Recieved pair: 32:32
+[13:51:08.974058541][[35mDEBUG[0m] client.c:376 in main() - Finished recieving routing table!
+[13:51:09.987047438][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 29 Dest 32 Src 1 Msg Over hill, over dale, 
+[13:51:09.997373086][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 29 Packet to: 32
+[13:51:10.008922345][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 29 Dest 8 Src 1 Msg Over park, over pale, 
+[13:51:10.009529944][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:10.011681066][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 31 Dest 32 Src 1 Msg I do wander everywhere, 
+[13:51:10.011968558][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 31 Packet to: 32
+[13:51:10.012115185][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 39 Dest 8 Src 1 Msg Those be rubies, fairy favours; 
+[13:51:10.012208007][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:10.013882515][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 42 Dest 128 Src 1 Msg I must go seek some dewdrops here, 
+[13:51:10.014153252][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 42 Packet to: 32
+[13:51:10.014298286][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 128 Src 1 Msg QUIT
+[13:51:10.014483807][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 32
+[13:51:10.014614630][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 32 Src 1 Msg QUIT
+[13:51:10.014817145][[35mDEBUG[0m] client.c:150 in send_packet() - Sending of length 11 Packet to: 32
+[13:51:10.014948166][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 8 Src 1 Msg QUIT
+[13:51:10.015040686][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+==8909== 
+==8909== HEAP SUMMARY:
+==8909==     in use at exit: 0 bytes in 0 blocks
+==8909==   total heap usage: 94 allocs, 94 frees, 48,288 bytes allocated
+==8909== 
+==8909== All heap blocks were freed -- no leaks are possible
+==8909== 
+==8909== For counts of detected and suppressed errors, rerun with: -v
+==8909== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

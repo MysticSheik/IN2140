@@ -1,0 +1,31 @@
+==8913== Memcheck, a memory error detector
+==8913== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8913== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8913== Command: ./node 5000 128 32:2 256:3
+==8913== 
+[13:51:08.679555657][[35mDEBUG[0m] client.c:70 in create_client_udp_socket() - Binding UDP Socket to port 5128
+[13:51:08.687702995][[35mDEBUG[0m] client.c:357 in main() - Setting up connection to server...
+[13:51:08.692538778][[35mDEBUG[0m] client.c:42 in create_client_tcp_socket() - Connecting to server at 127.0.0.1, port 5000
+[13:51:08.695702702][[35mDEBUG[0m] client.c:368 in main() - Sending edge data to server...
+[13:51:08.705162388][[1;35mRESPONSE[0m] client.c:203 in send_edges() - OK
+[13:51:08.707504384][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 32 : 2
+[13:51:08.711497723][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.711891132][[35mDEBUG[0m] client.c:215 in send_edges() - Sending Edge 256 : 3
+[13:51:08.718409932][[1;35mRESPONSE[0m] client.c:224 in send_edges() - OK
+[13:51:08.719317220][[35mDEBUG[0m] client.c:370 in main() - Finished sending edge data to server!
+[13:51:08.719924029][[35mDEBUG[0m] client.c:373 in main() - Waiting for Routing Table from Server...
+[13:51:08.884394362][[35mDEBUG[0m] client.c:92 in recv_routing_table() - Recieved num_pairs: 0
+[13:51:08.885960594][[35mDEBUG[0m] client.c:376 in main() - Finished recieving routing table!
+[13:51:10.025469774][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 42 Dest 128 Src 1 Msg I must go seek some dewdrops here, 
+[13:51:10.026394552][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+[13:51:10.036309135][[35mDEBUG[0m] client.c:179 in inspect_packet() - Decoded Packet: Len 11 Dest 128 Src 1 Msg QUIT
+[13:51:10.036429132][[35mDEBUG[0m] client.c:304 in run_receiver_node() - Packet reached destination!
+==8913== 
+==8913== HEAP SUMMARY:
+==8913==     in use at exit: 0 bytes in 0 blocks
+==8913==   total heap usage: 44 allocs, 44 frees, 19,909 bytes allocated
+==8913== 
+==8913== All heap blocks were freed -- no leaks are possible
+==8913== 
+==8913== For counts of detected and suppressed errors, rerun with: -v
+==8913== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
